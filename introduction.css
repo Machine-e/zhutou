@@ -1,0 +1,138 @@
+*{
+    /*初始化*/
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+body{display: flex;
+    background-image:linear-gradient(135deg,#74f3fe 10%,#729bfb 100%);
+    width:100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.biaoti{position: absolute;
+        bottom:80%;
+        left:37%;
+        height: 40px;
+        width:550px;}
+.biaoti h1{
+           font-size:40px;
+           font-family:"dengxianB";
+           color:#d062ff;
+            }
+.container{
+    position: relative;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+   
+}
+.container .box{
+    position:relative;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    transition: 0.5s;
+    margin:35px;
+    
+}
+.container .box:hover{
+    transform:scale(1.25);
+    box-shadow:0 25px 40px rgba(0, 0, 0, 0.5); 
+    z-index:999; 
+    
+                    
+}
+
+.container .box .imgbox{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+
+}
+.container .box .imgbox::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to top,#303030,transparent);
+   
+    z-index:998;
+    opacity: 0;
+    transition:0.5s;
+}
+.container .box:hover .imgbox::before{
+    opacity:1;
+}
+.container .box .imgbox img{
+    
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%; 
+    height:100%;
+    object-fit:cover;
+    
+}
+.container .box .textbox{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    padding:20px;
+    display:flex;
+    align-items:flex-end;
+    
+    color:#FFF;
+    
+    
+}
+.container .box .textbox h2{
+    font-size:20px;
+    margin-bottom:10px;
+    /*默认移出可视范围*/
+    transform: translateY(350px);
+    transition:0.5s;
+}
+.container .box:hover .textbox h2{
+    transform: translateY(0);
+    transition-delay:0.3s;
+}
+.container .box .textbox p{
+    font-size:20px;
+    margin-bottom:10px;
+    /*默认移出可视范围*/
+    transform: translateY(350px);
+    transition:0.5s;
+}
+.container .box:hover .textbox p{
+    transform: translateY(0);
+    transition-delay:0.3s;
+}
+
+
+
+@font-face {
+font-family:"dengxian";
+src: url(DENG.TTF);
+}
+@font-face {
+font-family:"dengxianL";
+src: url(DENGL.TTF);
+}
+@font-face {
+font-family:"dengxianB";
+src: url(DENGB.TTF);
+}
+
