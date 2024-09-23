@@ -1,0 +1,181 @@
+@font-face {
+    font-family:"dengxian";
+    src: url(DENG.TTF);}
+
+
+    @font-face {
+    font-family:"dengxianL";
+    src: url(DENGL.TTF);}
+    
+    
+    @font-face {
+        font-family:"dengxianB";
+        src: url(DENGB.TTF);}
+
+      
+    @keyframes changeshadow{0%{text-shadow: 0 0 4px #88a7d5}
+      50%{text-shadow: 0 0 40px #88a7d5}
+      100%{text-shadow: 0 0 4px #88a7d5}}
+
+
+
+        
+    
+     
+
+
+
+
+    *{
+     margin:0;
+     text-decoration: none;
+     padding:0;
+     list-style: none;
+     box-sizing: border-box;
+
+
+ }
+        .top{display: flex;
+             position:absolute;
+             width:100%;
+             align-items:center;
+             border-bottom:solid rgb(72, 169, 255) 5px;
+             height:60px;
+             text-shadow:"changeshadow";
+             }
+
+        
+             
+          
+ 
+    
+        .nav li{
+            text-indent:50px;
+            float:left;
+            text-align:center;
+            height: 40px;
+            
+            display:flex;
+            align-items:center;
+            
+            font-family:"dengxianB";    
+            font-size:20px;
+           }
+           .nav a{color:black;
+                  
+                  }
+ 
+           .nav a:hover{
+                color:#e4a7ff;
+           }          
+           .droplist {
+                background: #fff;
+                display:none;
+                flex-direction: column;
+                position: relative;
+                top:65px;
+                right: 135px;
+                z-index:999;
+                width: 150px;
+                height:100px;
+                text-align: center;
+                border-radius:0 0 10px 10px;
+                transition: .4s;
+                
+                
+                }
+            .nav li:hover .droplist{
+                display: flex;
+                
+            }
+          .introduction{text-decoration: none;
+             }
+         
+        
+      
+        .zhuye{background:linear-gradient(to right,#e4a7ff,#B3A5FC);
+               position:absolute;
+               top:60px;
+               
+               justify-content:center;
+               display:flex;
+               height:1024px;
+               width: 1682px;
+               
+               
+              
+            }
+        .zhuye-img{position:relative;}
+                   
+                
+               
+        .duilian{
+                 position:absolute;
+                 right: 1450px;
+                 top:70px;
+                 text-align:right;
+                 writing-mode: vertical-rl;
+                 font-size:50px;  
+                 font-family:"dengxianB";
+                 word-spacing:30px;
+                 }
+
+
+        
+        .sanjiutop1{height:100%;
+                    width:80px;
+                    position:relative;
+                    top:60px;
+                    left:1350px;}
+
+.btn-animate a{z-index:999;}
+.btn-animate {
+position:absolute;
+left:1500px;
+bottom:7px;
+width:130px;
+height: 25px;
+line-height: 40px;
+border: none;
+border-radius: 5px;
+background:#e4a7ff;
+color: #fff;
+text-align: center;
+z-index: 999;
+}
+
+
+.btn-animate__around {
+background: transparent;
+color:#e4a7ff;
+
+& > svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width:100%;
+  height: 100%;
+  
+
+  & > rect {
+    fill: none;
+    stroke: #e4a7ff;
+    stroke-width: 3;
+    stroke-dasharray: 422, 0;
+    transition: all .5s linear;
+  }
+}
+
+&:hover {
+  font-weight: 600;
+
+  & > svg {
+    & > rect {
+      stroke-width: 5;
+      stroke-dasharray: 15, 260;
+      stroke-dashoffset: 50%;
+      transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
+}
+}
