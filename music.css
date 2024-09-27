@@ -30,7 +30,7 @@
             }
 
        
-            
+        .biaoti{margin:25px;}     
          
 
    
@@ -38,7 +38,7 @@
            text-indent:50px;
            float:left;
            text-align:center;
-           height: 40px;
+           height:40px;
            
            display:flex;
            align-items:center;
@@ -52,31 +52,34 @@
 
           .nav a:hover{
                color:#e4a7ff;
+               
           }          
           .droplist {
                background: #fff;
-               display:none;
-               flex-direction: column;
+               
+               flex-direction:column;
                position: relative;
-               top:65px;
+               top:85px;
                right: 135px;
                z-index:999;
                width: 150px;
-               height:100px;
+               height:120px;
                text-align: center;
                border-radius:0 0 10px 10px;
-               transition: .4s;
-               
-               
+               transform: translateY(-350px);
+               transition: 0.5s;
+               overflow:hidden;
                }
            .nav li:hover .droplist{
-               display: flex;
+               
+               transform: translateY(0);
                
            }
 .box{display: flex;
      text-align: center;
      flex-direction: column;
-     background:#9fcfff;
+     background:#b0d6ff;
+     
      width:100%;
 
      position:absolute;
@@ -187,7 +190,7 @@
     position:absolute;
     left: 350px;
     height: 50px;
-    width: 165px;
+    width: 200px;
     font-size:40px;
     transform: translateX(350px);
     transition:0.5s;
