@@ -146,7 +146,7 @@ body{display: flex;
     width:1684px;
     height:100vh;
     background:linear-gradient(135deg,#a6ffde 10%,#ade5ff 100%);
-   
+    
 }
 .container .box{
     position:relative;
@@ -250,16 +250,18 @@ src: url(DENGL.TTF);
 font-family:"dengxianB";
 src: url(DENGB.TTF);
 }
-@keyframes out {
-    　from { transform: translateX(-500px); }
-      to { transform:translateX(0); }
+@keyframes comeout {
+    from{left: -200px;}
+    to{left:200px;}
     }
     
   
     .xiaobiaoti{position:absolute;
-        bottom:700px;
-        left:100px;
+        bottom: 700px;
+        left:200px;
         font-size:30px;
-        animation:out 0.5s forwards;
-      transition:0.3s;
+        animation:comeout 0.5s forwards;
+        font-family:"dengxian";
         }
+      
+          
