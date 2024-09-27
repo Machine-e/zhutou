@@ -1,36 +1,156 @@
 *{
-    /*初始化*/
     margin:0;
+    text-decoration: none;
     padding:0;
+    list-style: none;
     box-sizing: border-box;
+     
+
+}
+ 
+ 
+ 
+            .top{display: flex;
+             position:absolute;
+             width:100%;
+             align-items:center;
+             border-bottom:solid rgb(72, 169, 255) 5px;
+             height:60px;
+             background: #fff;
+             
+             }
+
+        
+             
+        .biaoti{margin:25px;}
+ 
+    
+        .nav li{
+            
+            text-indent:50px;
+            float:left;
+            text-align:center;
+            height: 40px;
+            
+            display:flex;
+            align-items:center;
+            
+            font-family:"dengxianB";    
+            font-size:20px;
+           }
+           .nav a{color:black;
+                  
+                  }
+ 
+           .nav a:hover{
+                color:#e4a7ff;
+           }          
+           .droplist {
+            background: #fff;
+            
+            flex-direction:column;
+            position: relative;
+            top:85px;
+            right: 135px;
+            z-index:999;
+            width: 150px;
+            height:120px;
+            text-align: center;
+            border-radius:0 0 10px 10px;
+            transform: translateY(-350px);
+            transition: 0.5s;
+            overflow:hidden;
+            }
+
+        .nav li:hover .droplist{
+            
+            transform: translateY(0);
+            
+        }
+
+        .btn-animate a{z-index:999;}
+.btn-animate {
+position:absolute;
+left:1500px;
+bottom:7px;
+width:130px;
+height: 25px;
+line-height: 40px;
+border: none;
+border-radius: 5px;
+background:#e4a7ff;
+color: #fff;
+text-align: center;
+z-index: 999;
 }
 
+
+.btn-animate__around {
+background: transparent;
+color:#e4a7ff;
+
+& > svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width:100%;
+  height: 100%;
+  
+
+  & > rect {
+    fill: none;
+    stroke: #e4a7ff;
+    stroke-width: 3;
+    stroke-dasharray: 422, 0;
+    transition: all .5s linear;
+  }
+}
+
+&:hover {
+  font-weight: 600;
+
+  & > svg {
+    & > rect {
+      stroke-width: 5;
+      stroke-dasharray: 15, 260;
+      stroke-dashoffset: 50%;
+      transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
+}
+}
+       
 
 
 
 
 body{display: flex;
-    background-image:linear-gradient(135deg,#74f3fe 10%,#729bfb 100%);
-    width:100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+     
 }
-.biaoti{position: absolute;
-        bottom:80%;
-        left:37%;
-        height: 40px;
-        width:550px;}
-.biaoti h1{
-           font-size:40px;
-           font-family:"dengxianB";
-           color:#d062ff;
+
+
+
+.xiaobiaoti{position:absolute;
+            bottom:700px;
+            left:100px;
+            font-size:30px;
             }
+
+
+
+ 
 .container{
-    position: relative;
+    position:absolute;
+    top: 60px;
     display:flex;
     flex-direction:row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style:none;
+    width:1684px;
+    height:100vh;
+    background:linear-gradient(135deg,#a6ffde 10%,#ade5ff 100%);
    
 }
 .container .box{
@@ -135,4 +255,12 @@ src: url(DENGL.TTF);
 font-family:"dengxianB";
 src: url(DENGB.TTF);
 }
-
+@keyframes out {
+    　　from { transform: translateX(-500px); }
+      to { transform:translateX(0); }
+    }
+    
+    .xiaobiaoti {
+      animation:out;
+      transition:0.3s;
+    }
