@@ -100,7 +100,7 @@
                
                justify-content:center;
                display:flex;
-               height:4500px;
+               height:4600px;
                width: 1682px;
                
               }
@@ -229,7 +229,7 @@ width:900px;
 height:300px; 
 position:relative;
 
-background:#b0d6ff;
+background:#ffffffe6;
 box-shadow:0 25px 40px rgba(0, 0, 0, 0.5); 
 margin:40px;
 transition:0.8s;
@@ -247,7 +247,7 @@ z-index:999;
 width:300px;
 height:300px;
 overflow:hidden;
-border-right: #82e4ff solid 5px;
+border-right: #96e1ff solid 5px;
 
 }
 .smallbox .imgbox img{
