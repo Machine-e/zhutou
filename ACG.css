@@ -100,7 +100,7 @@
                
                justify-content:center;
                display:flex;
-               height:3500px;
+               height:4500px;
                width: 1682px;
                
               }
@@ -209,6 +209,8 @@ color:#e4a7ff;
  
   
 }
+.box .border h1{position: absolute;
+                top:40px;}
 .box .border{
              display:flex;
              height: 100px;
@@ -216,13 +218,13 @@ color:#e4a7ff;
              justify-content: center;
              
              border-bottom:#fff solid 3px;
-             width: 500px;
+             width:600px;
              }
 .box .smallbox{
 display: flex;
 flex-direction:flex;
 align-items:center;
-
+font-family:dengxian;
 width:900px;
 height:300px; 
 position:relative;
