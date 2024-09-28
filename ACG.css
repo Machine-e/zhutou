@@ -18,6 +18,11 @@
       100%{text-shadow: 0 0 4px #88a7d5}}
 
 
+      @keyframes right{
+        0%{transform: translateX(-5000px);}
+        100%{transform: translateY(0px);}
+      }
+
 
         
     
@@ -41,7 +46,8 @@
              align-items:center;
              border-bottom:solid rgb(72, 169, 255) 5px;
              height:60px;
-             
+             animation:right 0.7s forwards;
+             z-index:1;
              }
 
         
@@ -87,7 +93,7 @@
             }
 
         .nav li:hover .droplist{
-            
+            z-index:999;
             transform: translateY(0);
             
         }
@@ -97,7 +103,7 @@
         .zhuye{background:linear-gradient(to right,#e4a7ff,#B3A5FC);
                position:absolute;
                top:60px;
-               
+               animation:right 0.7s forwards;
                justify-content:center;
                display:flex;
                height:4600px;
