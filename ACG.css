@@ -202,7 +202,7 @@ color:#e4a7ff;
 .box{display: flex;
   text-align: center;
   flex-direction: column;
- 
+  
   width:100%;
   
   position:absolute;
@@ -278,6 +278,8 @@ width:578px;
 }
 .smallbox .textbox h1{
 position:relative;
+margin: 10px;
+left: -10px;
 
 
 }
@@ -285,12 +287,127 @@ position:relative;
 position:absolute;
 left: 350px;
 height: 50px;
-width: 200px;
-font-size:40px;
+width:450px;
+font-size:30px;
 transform: translateX(350px);
 transition:0.5s;
+margin: 12px;
+
 }
 .smallbox:hover .textbox h2{
-transform: translateX(0px);
+transform: translateX(-50px);
 transition:0.3s;
 }
+.smallbox .textbox p1{
+  
+  font-size:20px;
+}
+.smallbox .textbox p2{
+  
+  font-size:20px;
+}
+.smallbox .textbox p3{
+  
+  font-size:20px;
+}
+.smallbox .textbox p4{
+  
+  font-size:20px;
+}
+.smallbox .textbox p5{
+  
+  font-size:20px;
+}
+.smallbox .textbox p6{
+  
+  font-size:20px;
+}
+.smallbox .textbox h3{
+  position:absolute;
+  left: 350px;
+  height: 50px;
+  width:400px;
+  font-size:40px;
+  transform: translateX(350px);
+  transition:0.5s;
+  }
+  .smallbox:hover .textbox h3{
+  transform: translateX(-90px);
+  transition:0.3s;
+  }
+  .smallbox .textbox h4{
+    position:absolute;
+    left: 350px;
+    height: 50px;
+    width:450px;
+    font-size:30px;
+    transform: translateX(350px);
+    transition:0.5s;
+    margin: 10px;
+    }
+    .smallbox:hover .textbox h4{
+    transform: translateX(-150px);
+    transition:0.3s;
+    }
+    .smallbox .textbox h5{
+      position:absolute;
+      left: 350px;
+      height: 50px;
+      width:450px;
+      font-size:25px;
+      transform: translateX(350px);
+      transition:0.5s;
+      margin: 15px;
+      }
+      .smallbox:hover .textbox h5{
+      transform: translateX(-100px);
+      transition:0.3s;
+      }
+      .smallbox .textbox h6{
+        position:absolute;
+        
+        left: 350px;
+        height: 50px;
+        width:450px;
+        font-size:30px;
+        transform: translateX(350px);
+        transition:0.5s;
+        margin:3px;
+        
+        }
+        .smallbox:hover .textbox h6{
+        transform: translateX(-125px);
+        transition:0.3s;
+        }
+        .smallbox .textbox h7{
+          position:absolute;
+          
+          left: 350px;
+          height: 50px;
+          width:450px;
+          font-size:30px;
+          transform: translateX(350px);
+          transition:0.5s;
+          margin:12px;
+          
+          }
+          .smallbox:hover .textbox h7{
+          transform: translateX(0px);
+          transition:0.3s;
+          }
+          .smallbox .textbox h8{
+            position:absolute;
+            
+            left: 350px;
+            height: 50px;
+            width:450px;
+            font-size:30px;
+            transform: translateX(350px);
+            transition:0.5s;
+            margin:3px;
+            
+            }
+            .smallbox:hover .textbox h8{
+            transform: translateX(-65px);
+            transition:0.3s;
+            }
