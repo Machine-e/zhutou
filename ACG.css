@@ -24,14 +24,93 @@
       }
 
 
+
+      @media (max-width:940px) {
+        .top{
+         display:flex;
+         width: 900px;
+         
         
-    
+        
+     } 
      
+      .nav li{
+       
+       flex-direction: row;
+       width:53.5%;
+       height:100%;
+       
+       }
+       .zhuye{
+         column-width: 10em;
+         width:900px;
+         display: flex;
+         
+       }
+       .zhuye .zhuye-img{
+         
+         max-width: 100%;
+         object-fit: cover;
+         
+         
+         }
+         .box{
+           width:100%;
+           display: flex;
+           
+           
+           column-count:8;
+           flex:1
+           
+         }
+         .box .smallbox
+         {
+           width:100%;
+           display: flex;
+           object-fit: cover;
+           align-items: center;
+           
+           flex:1
+           
+         }
+     
+     
+     
+     }
+     
+   
 
+     
+ 
+  
+   @media  (min-width:1682px) {
+     .top{
+       position:absolute;
+       width:100%;
+       
+     }
+     .zhuye{
+       width:100%;
+     }
+     .zhuye-img{
+       width:100%;
+     }
+   }
 
-
-
-    *{
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+          *{
      margin:0;
      text-decoration: none;
      padding:0;
@@ -52,9 +131,15 @@
 
         
              
-        .biaoti{margin:25px;}
+        .biaoti{margin:25px;
+                position:relative;  
+                }
  
-    
+        .nav {display: flex;
+              height: 60px;
+              width:100%;
+              align-items: center;
+              text-align: center;}
         .nav li{
             
             text-indent:50px;
@@ -107,13 +192,13 @@
                justify-content:center;
                display:flex;
                height:4600px;
-               width: 1682px;
+               width:100%;
                
               }
         
         .zhuye-img {position:relative;
-                   width: 1682px;
-                   height:800px;;
+                   width:100%;
+                   height:800px;
                  }
         .zhuye-img img{
           position:absolute;
